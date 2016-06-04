@@ -1,4 +1,4 @@
-alias viprof='vi ~/.bash_profile; source ~/.bash_profile'
+alias viprof='vi ~/.bashrc; source ~/.bashrc'
 
 #####################################################
 # ENVIRONMENT SPECIFIC STUFF
