@@ -1,0 +1,8 @@
+#####################################################
+# RedHat-specific environment setup
+
+alias rpmgrep="rpm -qa | grep"
+
+alias yi="sudo yum install"
+alias ys="yum search"
+alias yu="sudo yum update"

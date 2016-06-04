@@ -1,0 +1,36 @@
+#####################################################
+# Environment for Home iMac
+eval "$(rbenv init -)"
+
+# General aliases
+alias ll='ls -l'
+
+# Ruby helpers
+alias rgi='gem install'
+
+# Heroku push/pull
+function gph {
+  if [ -z "$1" ]; then
+    git push heroku master
+  else
+    git push heroku $1
+  fi
+}
+function glh {
+  if [ -z "$1" ]; then
+    git pull heroku master
+  else
+    git pull heroku $1
+  fi
+}
+
+# Helper to go to different directories.
+function goto {
+  case $1 in
+    "repos") cd /Users/michaelmanring/Michael/workspace/repos ;;
+     "ncsu") cd /Users/michaelmanring/Michael/NCSU\ Grad\ School ;;
+      "ctc") cd /Users/michaelmanring/Michael/workspace/repos/caryteencouncil ;;
+   "ctcphp") cd /Users/michaelmanring/Michael/workspace/repos/caryteencouncil.com ;;
+          *) cd ;;
+  esac
+}
